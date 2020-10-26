@@ -50,3 +50,11 @@ margin: 0 2.5%}
     padding: 2%
 }
 
+.rights {
+    text-align:center
+}
+section {
+    border: 1px solid #e5ebe3;
+    padding: 1%;
+}
+
