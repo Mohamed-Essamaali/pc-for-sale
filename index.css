@@ -35,22 +35,46 @@ img {
 }
 #products img {
     width:200px;
-    height: 200px
+    height: 200px;
+    margin: 1%
+}
+.images{
+    display: flex;
+    flex-wrap: wrap;
 }
 
-
 #about {display: flex;
-margin: 0 2.5%}
-
+    flex-wrap: wrap;
+margin: 0 10%;
+width: 100%;
+}
 .about-text {
-    width: 40%;
+    width: 30%;
     padding: 2% 5%;
 }
 #about img {
     width: 15vw;
     height: 30vh;
-    padding: 2%
+    padding: 2%;
+    
 }
+@media(max-width:500px){
+    #about{
+        display: flex;
+        flex-direction: column;
+    };
+    #about img{
+        width:30vw;
+        height:10vh;
+        padding: 1%;
+        margin:1%;
+    };
+    .about-text {
+        width: 100%;
+    }
+}
+
+
 
 .rights {
     text-align:center
@@ -59,4 +83,37 @@ section {
     border: 1px solid #e5ebe3;
     padding: 1%;
 }
+#services p {
+    width:70%;
+    
+}
 
+@media (max-width:1200px){
+    #about img {width:30vw}
+}
+@media (max-width:900px){
+    #about img {width:35vw}
+}
+
+@media (max-width:700px){
+    #about {display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding:1% 5%}
+   
+        #about img,#about div {width:50vw;margin: 1% 5%}
+        #products {padding:1% 5%}
+        .images {padding: 1% 5%}
+        #products img {width: 50vw;height:40vh;margin: 2% 15%}
+    
+}
+
+@media (max-width:600px){
+.products-text{padding:2%;line-height:1rem}
+.images {padding: 1%}
+#products img {width: 70vw;height:40vh;margin: 2% 5%}
+.navs {display: flex;flex-direction: column; text-align: center;}
+.navs a:hover{background:#d99898;}
+#about {margin-top: 15%}
+.navs a{font-size: 1.2rem}
+}
